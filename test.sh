@@ -5,13 +5,12 @@ writeRatio1=1
 writeRatio2=0.75
 writeRatio3=0.5
 
-for((i=0;i<=3;i++))
+for((i=0;i<=5;i++))
 do
         numThreads=1
 
-        for((j=0;j<=5;j++))
+        for((j=0;j<=3;j++))
         do
-                ((numThreads=$numThreads*2))
                 # echo $numThreads
                 # echo $numOP
 
@@ -23,7 +22,8 @@ do
 		
 		echo "Threads:" $numThreads "  numOP:" $numOP  "  writeRatio" $writeRatio3
                 ./l_queue_test $numThreads $numOP $writeRatio3
+		((numOP=$numOP*10))
         done
 
-        ((numOP=$numOP*10))
+	((numThreads=$numThreads*2))
 done
