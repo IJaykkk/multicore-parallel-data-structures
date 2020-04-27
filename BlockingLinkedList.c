@@ -5,11 +5,12 @@
 #include <pthread.h>
 #include <stdbool.h>
 #include <time.h>
+#include <omp.h>
 
 volatile unsigned long counter = 0;
-static pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
-static pthread_mutex_t mutex2 = PTHREAD_MUTEX_INITIALIZER;
-static pthread_mutex_t mutex3 = PTHREAD_MUTEX_INITIALIZER;
+// static pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
+// static pthread_mutex_t mutex2 = PTHREAD_MUTEX_INITIALIZER;
+// static pthread_mutex_t mutex3 = PTHREAD_MUTEX_INITIALIZER;
 
 int randomNumber(){
     return((1 + (int)( 20.0 * rand() / ( RAND_MAX + 1.0 ) )));
@@ -98,40 +99,41 @@ bool nextBool() {
         return false;
 }
 
-void *worker(void *arg) {
-    int i = 0;
-    int aux = 0;
-    for (i = 0; i < *((int *)arg); ++i) {
+// void *worker(void *arg) {
+// void worker(int count) {
+//     int i = 0;
+//     int aux = 0;
+//     for (i = 0; i < *((int *)arg); ++i) {
 
-        /*If true generates insert, otherwise generates remove*/
-        if(nextBool()){
-            aux = randomNumber();
+//         /*If true generates insert, otherwise generates remove*/
+//         if(nextBool()){
+//             aux = randomNumber();
 
-            pthread_mutex_lock(&mutex1);
-            insert(start, aux);
-            pthread_mutex_unlock(&mutex1);
+//             pthread_mutex_lock(&mutex1);
+//             insert(start, i);
+//             pthread_mutex_unlock(&mutex1);
 
-            printf("Insert = %d\n",aux);
-            printf("The ID of this thread is: %u\n", (unsigned int)pthread_self());
-        } else {
-            aux = randomNumber();
+//             printf("Insert = %d\n",aux);
+//             printf("The ID of this thread is: %u\n", (unsigned int)pthread_self());
+//         } else {
+//             aux = randomNumber();
 
-            pthread_mutex_unlock(&mutex2);
-            delete(start, aux);
-            pthread_mutex_unlock(&mutex2);
+//             pthread_mutex_unlock(&mutex2);
+//             delete(start, i);
+//             pthread_mutex_unlock(&mutex2);
 
-            printf("Deleted = %d\n",aux);
-            printf("The ID of this thread is: %u\n", (unsigned int)pthread_self());
-        }
-        pthread_mutex_lock(&mutex3);
-        print(start);
-        pthread_mutex_unlock(&mutex3);
-    }
-    return NULL;
-}
+//             printf("Deleted = %d\n",aux);
+//             printf("The ID of this thread is: %u\n", (unsigned int)pthread_self());
+//         }
+//         pthread_mutex_lock(&mutex3);
+//         print(start);
+//         pthread_mutex_unlock(&mutex3);
+//     }
+//     return NULL;
+// }
 
 int main(int argc, char **argv) {
-    int i, count;
+    int i, ite_num, threads_num;
     pthread_t *t;
 
     srand(time(NULL));
@@ -143,16 +145,41 @@ int main(int argc, char **argv) {
     return 1;
     }
 
-    count = atoi(argv[2]);
+    threads_num = atoi(argv[1]);
+    ite_num = atoi(argv[2]);
 
     /* create # threads */
-    t = (pthread_t *)calloc(atoi(argv[1]), sizeof(pthread_t));
-    for (i = 0; i < atoi(argv[1]); ++i)
-        assert(!pthread_create(&(t[i]), NULL, worker, (void *)&count));
+    // t = (pthread_t *)calloc(atoi(argv[1]), sizeof(pthread_t));
+    #pragma omp parallel for num_threads (threads_num)
+    for (i = 0; i < ite_num; ++i) {
+        if(nextBool()){
+            #pragma omp critical
+            {
+                insert(start, i);
+            }
 
-    /* wait for the completion of all the threads */
-    for (i = 0; i < atoi(argv[1]); ++i)
-        assert(!pthread_join(t[i], NULL));
+            printf("Insert = %d\n",i);
+            // printf("The ID of this thread is: %u\n", (unsigned int)pthread_self());
+        } else {
+            #pragma omp critical
+            {
+                delete(start, i);
+            }
+
+            printf("Deleted = %d\n",i);
+            // printf("The ID of this thread is: %u\n", (unsigned int)pthread_self());
+        }
+
+        #pragma omp critical
+        {
+            print(start);
+        }
+    }
+        // assert(!pthread_create(&(t[i]), NULL, worker, (void *)&count));
+
+    // /* wait for the completion of all the threads */
+    // for (i = 0; i < atoi(argv[1]); ++i)
+    //     assert(!pthread_join(t[i], NULL));
 
     printf("all thread done\n");
 
