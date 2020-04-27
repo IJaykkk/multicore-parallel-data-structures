@@ -15,13 +15,13 @@ do
                 # echo $numThreads
                 # echo $numOP
 
-                echo "numOP:" $numOP "  Threads:" $numThreads  "  writeRatio" $writeRatio1
+                echo "numOP:" $numThreads "  Threads:" $numOP  "  writeRatio" $writeRatio1
                 ./l_queue_test $numThreads $numOP $writeRatio
-
-                echo "numOP:" $numOP "  Threads:" $numThreads  "  writeRatio" $writeRatio2
+		
+		echo "numOP:" $numThreads "  Threads:" $numOP  "  writeRatio" $writeRatio2
                 ./l_queue_test $numThreads $numOP $writeRatio2
-
-                echo "numOP:" $numOP "  Threads:" $numThreads  "  writeRatio" $writeRatio3
+		
+		echo "numOP:" $numThreads "  Threads:" $numOP  "  writeRatio" $writeRatio3
                 ./l_queue_test $numThreads $numOP $writeRatio3
         done
 
