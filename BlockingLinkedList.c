@@ -30,9 +30,15 @@ void create(elem **head) {
 
 void insert(elem *pointer, int data) {
     /* Iterate through the list till we encounter the last elem.*/
-    while(pointer->next != NULL) {
+    while(pointer->next != NULL && (pointer->next)->data != data) {
         pointer = pointer -> next;
     }
+
+    if(pointer->next != NULL) {
+        // printf("Element %d is added in the list already\n",data);
+        return;
+    }
+
     /* Allocate memory for the new elem and put data in it.*/
     pointer->next = (elem *)malloc(sizeof(elem));
     pointer->next->data = data;
@@ -41,7 +47,7 @@ void insert(elem *pointer, int data) {
 
 int finding(elem *pointer, int data) {
     while (pointer->next != NULL && (pointer->next)->data != data) {
-            pointer = pointer -> next;
+        pointer = pointer -> next;
     }
 
     if (pointer->next != NULL) {
@@ -55,12 +61,12 @@ int finding(elem *pointer, int data) {
 void delete(elem *pointer, int data) {
     /* Go to the elem for which the elem next to it has to be deleted */
     while(pointer->next != NULL && (pointer->next)->data != data) {
-            pointer = pointer -> next;
+        pointer = pointer -> next;
     }
 
-    if(pointer->next==NULL) {
-            // printf("Element %d is not present in the list\n",data);
-            return;
+    if(pointer->next == NULL) {
+        // printf("Element %d is not present in the list\n",data);
+        return;
     }
 
     elem *temp;
@@ -73,7 +79,7 @@ void delete(elem *pointer, int data) {
 
 void print(elem *pointer) {
     pointer = pointer->next;
-    // printf("Print Sequential\n");
+
     while(pointer != NULL){
         printf("%d ",pointer->data);
         pointer = pointer->next;
