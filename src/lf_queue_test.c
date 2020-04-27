@@ -18,7 +18,6 @@ int main(int argc, char** argv) {
     int num_ops = strtol(argv[2], NULL, 10);
     float push_ratio = strtof(argv[3], NULL);
 
-    /* non-blocking queue */
     time_t t;
     srand((unsigned) time(&t));
 
@@ -28,7 +27,7 @@ int main(int argc, char** argv) {
     # pragma omp parallel for num_threads(num_threads)
     for (int i = 0; i < num_ops; i++) {
         int num  = rand() % 1000 + 1;
-        int r = (float)rand() / (float)RAND_MAX;
+        float r = (float) rand() / (float) RAND_MAX;
         if (r < push_ratio)  {
             queue_push(&q, (void *) num);
 

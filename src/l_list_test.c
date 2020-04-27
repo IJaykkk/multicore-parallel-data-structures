@@ -5,30 +5,58 @@
 #include <time.h>
 #include <unistd.h>
 #include <omp.h>
+#include <getopt.h>
 
 
 int main(int argc, char** argv) {
-    /* blocking linked list */
+    if ((argc - optind) < 4) {
+        printf("I need four fixed arguments!");
+        exit(1);
+    }
+
+    int num_threads = strtol(argv[1], NULL, 10);
+    int num_ops = strtol(argv[2], NULL, 10);
+    float insert_ratio = strtof(argv[3], NULL);
+    float delete_ratio = strtof(argv[4], NULL);
+
+    /* mapping from the ratio to range(0, 1) */
+    float insert_ts = insert_ratio;
+    float delete_ts = insert_ts + delete_ratio;
+
     time_t t;
     srand((unsigned) time(&t));
 
     list l;
     list_new(&l);
-    int idx = 1;
-    int *buffer = calloc(1000, sizeof(int));
-    # pragma omp parallel for num_threads(21)
-    for (int i = 0; i < 500; i++) {
-        int num  = rand() % 100 + 1;
-        if (num % 3 >= 1)  {
-            printf("num: %d inserting by %d\n", num, omp_get_thread_num());
+
+    # pragma omp parallel for num_threads(num_threads)
+    for (int i = 0; i < num_ops; i++) {
+        float r = (float) rand() / (float) RAND_MAX;
+        int num  = rand() % 1000 + 1;
+        if (r < insert_ts)  {
             list_insert(&l, num);
-            buffer[idx++] = num;
+
+            #ifdef DEBUG
+            printf("inserting %d, index: %d, by %d\n", num, i, omp_get_thread_num());
+            #endif
+        } else if (insert_ts < r && r < delete_ts) {
+            int val = list_delete(&l, num);
+
+            #ifdef DEBUG
+            printf("deleting %d, index: %d, status: %d, by %d\n", num, i, val, (int) omp_get_thread_num());
+            #endif
         } else {
-            int tmp_idx = rand() % idx;
-            int val = list_delete(&l, buffer[tmp_idx]);
-            printf("status: %d poped by %d\n", val, omp_get_thread_num());
+            int val = list_find(&l, num);
+
+            #ifdef DEBUG
+            printf("finding %d, index: %d, status: %d, by %d\n", num, i, val, (int) omp_get_thread_num());
+            #endif
         }
     }
-    list_print(&l);
+
+    #ifdef DEBUG
+    list_print(&l, num_ops);
+    #endif
+
     return 0;
 }

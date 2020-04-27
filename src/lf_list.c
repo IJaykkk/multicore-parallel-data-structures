@@ -115,9 +115,9 @@ node* list_search(list *l, int val, node **left_node) {
 
 
 /* debuggin API */
-void list_print(list *l) {
-    char msg[4000];
-    strcat(msg, "[");
+void list_print(list *l, int num_ops) {
+    char *msg = (char*) calloc(num_ops * 5, sizeof(char));
+    sprintf(msg, "[");
     node *curr = l->head->next;
     while (curr != NULL && curr->val != INT_MAX) {
         char buffer[5];

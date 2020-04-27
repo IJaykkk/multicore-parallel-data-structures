@@ -31,6 +31,6 @@ int list_insert(list *l, int val);
 int list_delete(list *l, int val);
 int list_find(list *l, int val);
 node* list_search(list *l, int val, node **left_node);
-void list_print(list *l);
+void list_print(list *l, int num_ops);
 
 #endif //MULTICORE_LF_LIST_H

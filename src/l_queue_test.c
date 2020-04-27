@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
         #endif
 
         int num  = rand() % 1000 + 1;
-        int r = (float)rand() / (float)RAND_MAX;
+        float r = (float) rand() / (float) RAND_MAX;
         if (r < push_ratio)  {
             queue_push(q, num);
 

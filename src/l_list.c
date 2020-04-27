@@ -66,13 +66,13 @@ int list_delete(list *l, int val) {
 int list_find(list *l, int val) {
     omp_on(l->lock);
 
-    int res = -1;
+    int res = 0;
     node *curr = l->head->next;
     while (curr != NULL && curr->val < val) {
         curr = curr->next;
     }
     if (curr != NULL && curr->val == val) {
-        res = curr->val;
+        res = 1;
     }
 
     omp_off(l->lock);
@@ -81,9 +81,9 @@ int list_find(list *l, int val) {
 
 
 /* debuggin API */
-void list_print(list *l) {
-    char *msg = calloc(40000, sizeof(char));
-    strcat(msg, "[");
+void list_print(list *l, int num_ops) {
+    char *msg = (char*) calloc(num_ops * 5, sizeof(char));
+    sprintf(msg, "[");
     node *curr = l->head->next;
     while (curr != NULL) {
         char buffer[5];
