@@ -98,9 +98,9 @@ int queue_pop(queue *q) {
 }
 
 /* debuggin API */
-void queue_print(queue *q) {
-    char msg[4000];
-    strcat(msg, "[");
+void queue_print(queue *q, int num_ops) {
+    char *msg = (char*) calloc(num_ops * 5, sizeof(char));
+    sprintf(msg, "[");
     node *curr = q->head->next;
     while (curr != NULL) {
         char buffer[5];

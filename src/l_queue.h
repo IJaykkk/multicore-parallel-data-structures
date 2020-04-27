@@ -33,7 +33,7 @@ size_t queue_size(queue *q);
 void queue_push(queue *q, int val);
 int queue_peek(queue *q);
 int queue_pop(queue *q);
-void queue_print(queue *q);
+void queue_print(queue *q, int num_threads);
 
 #endif //MULTICORE_L_QUEUE_H
 
