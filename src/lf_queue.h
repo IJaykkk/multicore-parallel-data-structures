@@ -1,8 +1,5 @@
-//
-// Created by Eric.
-//
-#ifndef MULTICORE_LFQUEUE_H
-#define MULTICORE_LFQUEUE_H
+#ifndef MULTICORE_LF_QUEUE_H
+#define MULTICORE_LF_QUEUE_H
 
 #define CAS(old_ptr,old_val,new_val) \
     (__sync_bool_compare_and_swap(old_ptr, old_val, new_val))
@@ -29,4 +26,4 @@ int queue_push(queue *q, void *val);
 void* queue_pop(queue *q);
 void queue_print(queue *q);
 
-#endif //MULTICORE_LFQUEUE_H
+#endif //MULTICORE_LF_QUEUE_H

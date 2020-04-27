@@ -1,7 +1,4 @@
-// Created by Eric.
-//
-
-#include "lqueue.h"
+#include "l_queue.h"
 #include <string.h>
 
 node* node_new(int val) {

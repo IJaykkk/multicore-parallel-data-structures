@@ -1,8 +1,5 @@
-// Created by Eric.
-//
-
-#ifndef MULTICORE_LOCKLIST_H
-#define MULTICORE_LOCKLIST_H
+#ifndef MULTICORE_L_LIST_H
+#define MULTICORE_L_LIST_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,5 +34,4 @@ int list_find(list *l, int val);
 size_t list_size(list *l);
 void list_print(list *l);
 
-#endif //MULTICORE_LOCKLIST_H
-
+#endif //MULTICORE_L_LIST_H

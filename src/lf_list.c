@@ -1,4 +1,4 @@
-#include "llist.h"
+#include "lf_list.h"
 #include "limits.h"
 #include "string.h"
 
@@ -55,7 +55,7 @@ int list_delete(list *l, int val) {
     while (1) {
         right_node = list_search(l, val, &left_node);
         if ((right_node == l->tail) || (right_node->val != val)) {
-            return 0;
+            return -1;
         }
         right_node_next = right_node->next; 
         if (!is_marked((long) right_node_next)) // right_node_next can't be logically deleted
@@ -66,7 +66,7 @@ int list_delete(list *l, int val) {
     if (!CAS(&(left_node->next), right_node, right_node_next)) { // redirector left_node->next to right_node_next
         right_node = list_search(l, right_node->val, &left_node);
     }
-    return 1;
+    return val;
 }
 
 

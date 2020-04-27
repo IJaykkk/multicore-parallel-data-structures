@@ -1,8 +1,5 @@
-// Created by Eric.
-//
-
-#ifndef MULTICORE_LLIST_H
-#define MULTICORE_LLIST_H
+#ifndef MULTICORE_LF_LIST_H
+#define MULTICORE_LF_LIST_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,4 +33,4 @@ int list_find(list *l, int val);
 node* list_search(list *l, int val, node **left_node);
 void list_print(list *l);
 
-#endif //MULTICORE_LLIST_H
+#endif //MULTICORE_LF_LIST_H

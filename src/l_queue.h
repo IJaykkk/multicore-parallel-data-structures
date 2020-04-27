@@ -1,8 +1,5 @@
-// Created by Eric.
-//
-
-#ifndef MULTICORE_LOCKQUEUE_H
-#define MULTICORE_LOCKQUEUE_H
+#ifndef MULTICORE_L_QUEUE_H
+#define MULTICORE_L_QUEUE_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -38,5 +35,5 @@ int queue_peek(queue *q);
 int queue_pop(queue *q);
 void queue_print(queue *q);
 
-#endif //MULTICORE_LOCKQUEUE_H
+#endif //MULTICORE_L_QUEUE_H
 

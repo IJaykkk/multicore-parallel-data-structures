@@ -1,4 +1,4 @@
-#include "list.h"
+#include "l_list.h"
 
 #include <string.h>
 #include <omp.h>
