@@ -6,7 +6,9 @@
 node* node_new(int val) {
     node *new_node = (node*) malloc(sizeof(node));
     if (new_node == NULL) {
+#ifdef DEBUG
         printf("node_new(%d)\n", val);
+#endif
         return NULL;
     }
     new_node->next = NULL;

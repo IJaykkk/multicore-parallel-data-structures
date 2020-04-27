@@ -4,7 +4,9 @@
 node* node_new(int val) {
     node *new_node = (node*) malloc(sizeof(node));
     if (new_node == NULL) {
-        printf("node_new(%d)\n", val);
+#ifdef DEBUG
+        printf("node_new(%d) failed\n", val);
+#endif
         return NULL;
     }
     new_node->next = NULL;
@@ -29,7 +31,9 @@ void queue_delete(queue* q) {
 
 size_t queue_size(queue *q) {
     if (q == NULL) {
+#ifdef DEBUG
         printf("queue is null.\n");
+#endif
         exit(1);
     }
 
@@ -58,7 +62,9 @@ int queue_peek(queue* q) {
 
     if (q->head->next == NULL) {
         omp_off(q->lock);
+#ifdef DEBUG
         printf("queue size is 0.\n");
+#endif
         return -1;
     }
 
@@ -73,14 +79,18 @@ int queue_pop(queue *q) {
 
     if (q->head->next == NULL) {
         omp_off(q->lock);
+#ifdef DEBUG
         printf("queue size is 0.\n");
+#endif
         return -1;
     }
 
     node *pred = q->head;
     node *curr = pred->next;
     if (curr == NULL) { /* queue is empty */
+#ifdef DEBUG
         printf("queue is empty\n");
+#endif
         return -1;
     }  else {
         pred->next = curr->next;
