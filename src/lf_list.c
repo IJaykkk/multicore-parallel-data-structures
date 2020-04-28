@@ -57,10 +57,10 @@ int list_delete(list *l, int val) {
         if ((right_node == l->tail) || (right_node->val != val)) {
             return -1;
         }
-        right_node_next = right_node->next; 
-        if (!is_marked((long) right_node_next)) // the target node can't be logically deleted
-            if (CAS(&(right_node->next), right_node_next, 
-                get_marked((long) right_node_next))) // mark right_node->next
+        right_node_next = right_node->next;
+        if (!is_marked((long) right_node_next))
+            if (CAS(&(right_node->next), right_node_next,
+                get_marked((long) right_node_next)))
                 break;
     }
     if (!CAS(&(left_node->next), right_node, right_node_next)) {
