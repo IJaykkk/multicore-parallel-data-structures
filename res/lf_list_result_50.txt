@@ -1,0 +1,150 @@
+./bin/lf_list_test threads: 1, numOP: 5000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 10000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 20000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 40000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 80000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 5000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 10000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 20000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 40000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 80000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 5000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 10000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 20000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 40000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 80000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 5000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 10000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 20000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 40000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.000s
+-----------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 80000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 5000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 10000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 20000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 40000, writeRatio 0.50,  times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 80000, writeRatio 0.50,  times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------

@@ -1,0 +1,125 @@
+./bin/l_list_test threads: 1, numOP: 5000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.012s
+user	0m0.009s
+sys	0m0.002s
+./bin/l_list_test threads: 1, numOP: 10000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.069s
+user	0m0.033s
+sys	0m0.003s
+./bin/l_list_test threads: 1, numOP: 20000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.178s
+user	0m0.130s
+sys	0m0.002s
+./bin/l_list_test threads: 1, numOP: 40000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.524s
+user	0m0.515s
+sys	0m0.002s
+./bin/l_list_test threads: 1, numOP: 80000, writeRatio 0.30 removeRatio 0.20
+
+real	0m2.024s
+user	0m2.019s
+sys	0m0.004s
+./bin/l_list_test threads: 2, numOP: 5000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.018s
+user	0m0.010s
+sys	0m0.003s
+./bin/l_list_test threads: 2, numOP: 10000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.043s
+user	0m0.074s
+sys	0m0.003s
+./bin/l_list_test threads: 2, numOP: 20000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.131s
+user	0m0.217s
+sys	0m0.005s
+./bin/l_list_test threads: 2, numOP: 40000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.518s
+user	0m1.022s
+sys	0m0.001s
+./bin/l_list_test threads: 2, numOP: 80000, writeRatio 0.30 removeRatio 0.20
+
+real	0m2.144s
+user	0m3.744s
+sys	0m0.007s
+./bin/l_list_test threads: 4, numOP: 5000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.030s
+user	0m0.041s
+sys	0m0.005s
+./bin/l_list_test threads: 4, numOP: 10000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.096s
+user	0m0.159s
+sys	0m0.001s
+./bin/l_list_test threads: 4, numOP: 20000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.173s
+user	0m0.462s
+sys	0m0.003s
+./bin/l_list_test threads: 4, numOP: 40000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.849s
+user	0m2.035s
+sys	0m0.011s
+./bin/l_list_test threads: 4, numOP: 80000, writeRatio 0.30 removeRatio 0.20
+
+real	0m2.984s
+user	0m6.826s
+sys	0m0.044s
+./bin/l_list_test threads: 8, numOP: 5000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.061s
+user	0m0.180s
+sys	0m0.009s
+./bin/l_list_test threads: 8, numOP: 10000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.072s
+user	0m0.316s
+sys	0m0.004s
+./bin/l_list_test threads: 8, numOP: 20000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.312s
+user	0m1.417s
+sys	0m0.008s
+./bin/l_list_test threads: 8, numOP: 40000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.993s
+user	0m3.756s
+sys	0m0.019s
+./bin/l_list_test threads: 8, numOP: 80000, writeRatio 0.30 removeRatio 0.20
+
+real	0m3.634s
+user	0m12.554s
+sys	0m0.080s
+./bin/l_list_test threads: 16, numOP: 5000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.070s
+user	0m0.282s
+sys	0m0.007s
+./bin/l_list_test threads: 16, numOP: 10000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.134s
+user	0m0.711s
+sys	0m0.014s
+./bin/l_list_test threads: 16, numOP: 20000, writeRatio 0.30 removeRatio 0.20
+
+real	0m0.388s
+user	0m2.482s
+sys	0m0.016s
+./bin/l_list_test threads: 16, numOP: 40000, writeRatio 0.30 removeRatio 0.20
+
+real	0m1.029s
+user	0m7.458s
+sys	0m0.023s
+./bin/l_list_test threads: 16, numOP: 80000, writeRatio 0.30 removeRatio 0.20
+
+real	0m6.535s
+user	0m36.585s
+sys	0m0.127s

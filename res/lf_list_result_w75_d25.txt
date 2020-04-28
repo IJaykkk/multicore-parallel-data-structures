@@ -1,0 +1,150 @@
+./bin/lf_list_test threads: 1, numOP: 5000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.055s
+user	0m0.033s
+sys	0m0.002s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 10000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.073s
+user	0m0.072s
+sys	0m0.000s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 20000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.148s
+user	0m0.144s
+sys	0m0.002s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 40000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.312s
+user	0m0.294s
+sys	0m0.000s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 1, numOP: 80000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.605s
+user	0m0.594s
+sys	0m0.002s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 5000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.063s
+user	0m0.032s
+sys	0m0.005s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 10000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.084s
+user	0m0.076s
+sys	0m0.004s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 20000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.087s
+user	0m0.162s
+sys	0m0.003s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 40000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.264s
+user	0m0.302s
+sys	0m0.011s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 2, numOP: 80000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.380s
+user	0m0.653s
+sys	0m0.009s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 5000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.036s
+user	0m0.042s
+sys	0m0.003s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 10000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.069s
+user	0m0.086s
+sys	0m0.005s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 20000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.112s
+user	0m0.173s
+sys	0m0.007s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 40000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.220s
+user	0m0.342s
+sys	0m0.023s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 4, numOP: 80000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.483s
+user	0m0.658s
+sys	0m0.017s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 5000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.025s
+user	0m0.053s
+sys	0m0.007s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 10000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.047s
+user	0m0.101s
+sys	0m0.007s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 20000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.119s
+user	0m0.193s
+sys	0m0.013s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 40000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.243s
+user	0m0.343s
+sys	0m0.020s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 8, numOP: 80000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.496s
+user	0m0.701s
+sys	0m0.036s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 5000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.049s
+user	0m0.074s
+sys	0m0.011s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 10000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.060s
+user	0m0.127s
+sys	0m0.024s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 20000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.097s
+user	0m0.218s
+sys	0m0.042s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 40000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.192s
+user	0m0.470s
+sys	0m0.083s
+-----------------------------------------------------------------
+./bin/lf_list_test threads: 16, numOP: 80000, writeRatio 0.75 removeRatio 0.25
+
+real	0m0.318s
+user	0m0.901s
+sys	0m0.276s
+-----------------------------------------------------------------
