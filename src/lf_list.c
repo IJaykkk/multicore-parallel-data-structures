@@ -58,12 +58,12 @@ int list_delete(list *l, int val) {
             return -1;
         }
         right_node_next = right_node->next; 
-        if (!is_marked((long) right_node_next)) // right_node_next can't be logically deleted
+        if (!is_marked((long) right_node_next)) // the target node can't be logically deleted
             if (CAS(&(right_node->next), right_node_next, 
                 get_marked((long) right_node_next))) // mark right_node->next
                 break;
     }
-    if (!CAS(&(left_node->next), right_node, right_node_next)) { // redirector left_node->next to right_node_next
+    if (!CAS(&(left_node->next), right_node, right_node_next)) {
         right_node = list_search(l, right_node->val, &left_node);
     }
     return val;
