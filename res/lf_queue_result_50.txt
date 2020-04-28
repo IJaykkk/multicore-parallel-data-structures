@@ -1,0 +1,432 @@
+./bin/lf_queue_test threads: 1, numOP: 10, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 10, writeRatio 0.50, 2 times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 100, writeRatio 0.50, 1 times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 100, writeRatio 0.50, 2 times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 1000, writeRatio 0.50, 1 times
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 1000, writeRatio 0.50, 2 times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 10000, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 10000, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.003s
+sys	0m0.000s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 100000, writeRatio 0.50, 1 times
+
+real	0m0.014s
+user	0m0.013s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 100000, writeRatio 0.50, 2 times
+
+real	0m0.014s
+user	0m0.013s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 1000000, writeRatio 0.50, 1 times
+
+real	0m0.123s
+user	0m0.121s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 1, numOP: 1000000, writeRatio 0.50, 2 times
+
+real	0m0.123s
+user	0m0.121s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 10, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 10, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 100, writeRatio 0.50, 1 times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 100, writeRatio 0.50, 2 times
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 1000, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 1000, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 10000, writeRatio 0.50, 1 times
+
+real	0m0.011s
+user	0m0.010s
+sys	0m0.005s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 10000, writeRatio 0.50, 2 times
+
+real	0m0.014s
+user	0m0.019s
+sys	0m0.006s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 100000, writeRatio 0.50, 1 times
+
+real	0m0.022s
+user	0m0.028s
+sys	0m0.005s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 100000, writeRatio 0.50, 2 times
+
+real	0m0.110s
+user	0m0.129s
+sys	0m0.082s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 1000000, writeRatio 0.50, 1 times
+
+real	0m0.709s
+user	0m0.880s
+sys	0m0.427s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 2, numOP: 1000000, writeRatio 0.50, 2 times
+
+real	0m0.824s
+user	0m1.051s
+sys	0m0.497s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 10, writeRatio 0.50, 1 times
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.004s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 10, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 100, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 100, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 1000, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.004s
+sys	0m0.001s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 1000, writeRatio 0.50, 2 times
+
+real	0m0.008s
+user	0m0.017s
+sys	0m0.003s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 10000, writeRatio 0.50, 1 times
+
+real	0m0.023s
+user	0m0.038s
+sys	0m0.013s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 10000, writeRatio 0.50, 2 times
+
+real	0m0.021s
+user	0m0.040s
+sys	0m0.014s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 100000, writeRatio 0.50, 1 times
+
+real	0m0.120s
+user	0m0.164s
+sys	0m0.144s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 100000, writeRatio 0.50, 2 times
+
+real	0m0.123s
+user	0m0.174s
+sys	0m0.151s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 1000000, writeRatio 0.50, 1 times
+
+real	0m1.276s
+user	0m1.604s
+sys	0m1.660s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 4, numOP: 1000000, writeRatio 0.50, 2 times
+
+real	0m1.254s
+user	0m1.807s
+sys	0m1.758s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 10, writeRatio 0.50, 1 times
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.004s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 10, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 100, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 100, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 1000, writeRatio 0.50, 1 times
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 1000, writeRatio 0.50, 2 times
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 10000, writeRatio 0.50, 1 times
+
+real	0m0.006s
+user	0m0.008s
+sys	0m0.000s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 10000, writeRatio 0.50, 2 times
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.004s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 100000, writeRatio 0.50, 1 times
+
+real	0m0.119s
+user	0m0.154s
+sys	0m0.201s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 100000, writeRatio 0.50, 2 times
+
+real	0m0.122s
+user	0m0.185s
+sys	0m0.211s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 1000000, writeRatio 0.50, 1 times
+
+real	0m1.435s
+user	0m2.065s
+sys	0m2.677s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 8, numOP: 1000000, writeRatio 0.50, 2 times
+
+real	0m1.263s
+user	0m1.786s
+sys	0m2.393s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 10, writeRatio 0.50, 1 times
+
+real	0m0.006s
+user	0m0.001s
+sys	0m0.006s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 10, writeRatio 0.50, 2 times
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.005s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 100, writeRatio 0.50, 1 times
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.005s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 100, writeRatio 0.50, 2 times
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.005s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 1000, writeRatio 0.50, 1 times
+
+real	0m0.006s
+user	0m0.001s
+sys	0m0.006s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 1000, writeRatio 0.50, 2 times
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.006s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 10000, writeRatio 0.50, 1 times
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.004s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 10000, writeRatio 0.50, 2 times
+
+real	0m0.012s
+user	0m0.018s
+sys	0m0.013s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 100000, writeRatio 0.50, 1 times
+
+real	0m0.167s
+user	0m0.237s
+sys	0m0.369s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 100000, writeRatio 0.50, 2 times
+
+real	0m0.168s
+user	0m0.235s
+sys	0m0.361s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 1000000, writeRatio 0.50, 1 times
+
+real	0m1.543s
+user	0m2.234s
+sys	0m3.372s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 16, numOP: 1000000, writeRatio 0.50, 2 times
+
+real	0m1.586s
+user	0m2.333s
+sys	0m3.558s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 10, writeRatio 0.50, 1 times
+
+real	0m0.006s
+user	0m0.002s
+sys	0m0.006s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 10, writeRatio 0.50, 2 times
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.007s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 100, writeRatio 0.50, 1 times
+
+real	0m0.006s
+user	0m0.001s
+sys	0m0.008s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 100, writeRatio 0.50, 2 times
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.008s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 1000, writeRatio 0.50, 1 times
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.009s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 1000, writeRatio 0.50, 2 times
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.004s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 10000, writeRatio 0.50, 1 times
+
+real	0m0.018s
+user	0m0.025s
+sys	0m0.034s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 10000, writeRatio 0.50, 2 times
+
+real	0m0.021s
+user	0m0.021s
+sys	0m0.022s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 100000, writeRatio 0.50, 1 times
+
+real	0m0.163s
+user	0m0.217s
+sys	0m0.405s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 100000, writeRatio 0.50, 2 times
+
+real	0m0.179s
+user	0m0.249s
+sys	0m0.416s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 1000000, writeRatio 0.50, 1 times
+
+real	0m1.522s
+user	0m2.196s
+sys	0m3.693s
+-----------------------------------------------------
+./bin/lf_queue_test threads: 32, numOP: 1000000, writeRatio 0.50, 2 times
+
+real	0m1.661s
+user	0m2.392s
+sys	0m4.105s
+-----------------------------------------------------
