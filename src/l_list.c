@@ -35,9 +35,11 @@ void list_insert(list *l, int val) {
         pred = curr;
         curr = curr->next;
     }
-    pred->next = new_node;
-    new_node->next = curr;
-    l->size += 1;
+    if (curr == NULL || curr->val != val) {
+        pred->next = new_node;
+        new_node->next = curr;
+        l->size += 1;
+    }
 
     omp_off(l->lock);
     return;

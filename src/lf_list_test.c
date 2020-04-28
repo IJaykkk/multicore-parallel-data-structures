@@ -29,10 +29,10 @@ int main(int argc, char** argv) {
     list l;
     list_new(&l);
 
-    # pragma omp parallel for num_threads(num_threads)
+    /* one thread doing all */
     for (int i = 0; i < num_ops; i++) {
         float r = (float) rand() / (float) RAND_MAX;
-        int num  = rand() % 1000 + 1;
+        int num  = rand();
         if (r < insert_ts)  {
             list_insert(&l, num);
 

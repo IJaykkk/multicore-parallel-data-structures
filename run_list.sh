@@ -10,7 +10,7 @@ removeRatio2=0.50
 removeRatio3=0.25
 removeRatio4=0.00
 
-for numThreads in 1 2 4 8 16
+for numThreads in 1 2 4 8 16 32
 do
     for numOP in 5000 10000 20000 40000 80000
     do
@@ -36,7 +36,7 @@ do
     done
 done
 
-for numThreads in 1 2 4 8 16
+for numThreads in 1 2 4 8 16 32
 do
     for numOP in 5000 10000 20000 40000 80000
     do
