@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     list l;
     list_new(&l);
 
-    /* one thread doing all */
+    # pragma omp parallel for num_threads(num_threads)
     for (int i = 0; i < num_ops; i++) {
         float r = (float) rand() / (float) RAND_MAX;
         int num  = rand();
