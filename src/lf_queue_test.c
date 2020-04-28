@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
 
     # pragma omp parallel for num_threads(num_threads)
     for (int i = 0; i < num_ops; i++) {
-        int num  = rand() % 1000 + 1;
+        int num  = rand();
         float r = (float) rand() / (float) RAND_MAX;
         if (r < push_ratio)  {
             queue_push(&q, (void *) num);

@@ -1,432 +1,120 @@
-./bin/l_queue_test threads: 1, numOP: 10, writeRatio 0.75, 1 times
+./bin/l_queue_test threads: 1, numOP: 1000000, writeRatio 0.75,  times
 
-real	0m0.002s
-user	0m0.000s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 10, writeRatio 0.75, 2 times
-
-real	0m0.002s
-user	0m0.001s
-sys	0m0.001s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 100, writeRatio 0.75, 1 times
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 100, writeRatio 0.75, 2 times
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 1000, writeRatio 0.75, 1 times
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 1000, writeRatio 0.75, 2 times
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 10000, writeRatio 0.75, 1 times
-
-real	0m0.003s
-user	0m0.002s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 10000, writeRatio 0.75, 2 times
-
-real	0m0.004s
-user	0m0.002s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 100000, writeRatio 0.75, 1 times
-
-real	0m0.019s
-user	0m0.016s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 100000, writeRatio 0.75, 2 times
-
-real	0m0.020s
-user	0m0.014s
-sys	0m0.005s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 1000000, writeRatio 0.75, 1 times
-
-real	0m0.184s
-user	0m0.133s
-sys	0m0.050s
------------------------------------------------------
-./bin/l_queue_test threads: 1, numOP: 1000000, writeRatio 0.75, 2 times
-
-real	0m0.171s
-user	0m0.128s
-sys	0m0.043s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 10, writeRatio 0.75, 1 times
-
-real	0m0.003s
-user	0m0.003s
-sys	0m0.000s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 10, writeRatio 0.75, 2 times
-
-real	0m0.003s
-user	0m0.001s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 100, writeRatio 0.75, 1 times
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 100, writeRatio 0.75, 2 times
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 1000, writeRatio 0.75, 1 times
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 1000, writeRatio 0.75, 2 times
-
-real	0m0.003s
-user	0m0.002s
-sys	0m0.001s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 10000, writeRatio 0.75, 1 times
-
-real	0m0.012s
-user	0m0.016s
-sys	0m0.006s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 10000, writeRatio 0.75, 2 times
-
-real	0m0.011s
-user	0m0.016s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 100000, writeRatio 0.75, 1 times
-
-real	0m0.086s
-user	0m0.163s
-sys	0m0.006s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 100000, writeRatio 0.75, 2 times
-
-real	0m0.101s
-user	0m0.190s
-sys	0m0.008s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 1000000, writeRatio 0.75, 1 times
-
-real	0m0.930s
-user	0m1.690s
-sys	0m0.131s
------------------------------------------------------
-./bin/l_queue_test threads: 2, numOP: 1000000, writeRatio 0.75, 2 times
-
-real	0m0.975s
-user	0m1.787s
-sys	0m0.127s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 10, writeRatio 0.75, 1 times
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 10, writeRatio 0.75, 2 times
-
-real	0m0.003s
-user	0m0.002s
-sys	0m0.001s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 100, writeRatio 0.75, 1 times
-
-real	0m0.003s
-user	0m0.003s
-sys	0m0.001s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 100, writeRatio 0.75, 2 times
-
-real	0m0.003s
-user	0m0.003s
-sys	0m0.001s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 1000, writeRatio 0.75, 1 times
-
-real	0m0.004s
-user	0m0.006s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 1000, writeRatio 0.75, 2 times
-
-real	0m0.004s
-user	0m0.005s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 10000, writeRatio 0.75, 1 times
-
-real	0m0.019s
-user	0m0.047s
-sys	0m0.006s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 10000, writeRatio 0.75, 2 times
-
-real	0m0.016s
-user	0m0.043s
-sys	0m0.006s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 100000, writeRatio 0.75, 1 times
-
-real	0m0.127s
-user	0m0.450s
-sys	0m0.023s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 100000, writeRatio 0.75, 2 times
-
-real	0m0.115s
-user	0m0.295s
-sys	0m0.075s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 1000000, writeRatio 0.75, 1 times
-
-real	0m1.059s
-user	0m3.092s
-sys	0m0.414s
------------------------------------------------------
-./bin/l_queue_test threads: 4, numOP: 1000000, writeRatio 0.75, 2 times
-
-real	0m1.380s
-user	0m4.848s
-sys	0m0.165s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 10, writeRatio 0.75, 1 times
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 10, writeRatio 0.75, 2 times
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 100, writeRatio 0.75, 1 times
-
-real	0m0.005s
-user	0m0.003s
-sys	0m0.002s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 100, writeRatio 0.75, 2 times
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 1000, writeRatio 0.75, 1 times
-
-real	0m0.004s
-user	0m0.001s
-sys	0m0.005s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 1000, writeRatio 0.75, 2 times
-
-real	0m0.005s
-user	0m0.000s
-sys	0m0.007s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 10000, writeRatio 0.75, 1 times
-
-real	0m0.015s
-user	0m0.024s
+real	0m0.120s
+user	0m0.108s
 sys	0m0.011s
 -----------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 10000, writeRatio 0.75, 2 times
+./bin/l_queue_test threads: 1, numOP: 2000000, writeRatio 0.75,  times
 
-real	0m0.014s
-user	0m0.020s
-sys	0m0.016s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 100000, writeRatio 0.75, 1 times
-
-real	0m0.132s
-user	0m0.327s
-sys	0m0.151s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 100000, writeRatio 0.75, 2 times
-
-real	0m0.165s
-user	0m0.523s
-sys	0m0.078s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 1000000, writeRatio 0.75, 1 times
-
-real	0m1.409s
-user	0m3.243s
-sys	0m1.556s
------------------------------------------------------
-./bin/l_queue_test threads: 8, numOP: 1000000, writeRatio 0.75, 2 times
-
-real	0m1.358s
-user	0m4.229s
-sys	0m0.674s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 10, writeRatio 0.75, 1 times
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.005s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 10, writeRatio 0.75, 2 times
-
-real	0m0.004s
-user	0m0.002s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 100, writeRatio 0.75, 1 times
-
-real	0m0.004s
-user	0m0.001s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 100, writeRatio 0.75, 2 times
-
-real	0m0.004s
-user	0m0.001s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 1000, writeRatio 0.75, 1 times
-
-real	0m0.005s
-user	0m0.004s
-sys	0m0.003s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 1000, writeRatio 0.75, 2 times
-
-real	0m0.004s
-user	0m0.001s
-sys	0m0.004s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 10000, writeRatio 0.75, 1 times
-
-real	0m0.014s
-user	0m0.032s
-sys	0m0.008s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 10000, writeRatio 0.75, 2 times
-
-real	0m0.012s
-user	0m0.017s
-sys	0m0.011s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 100000, writeRatio 0.75, 1 times
-
-real	0m0.138s
-user	0m0.237s
-sys	0m0.242s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 100000, writeRatio 0.75, 2 times
-
-real	0m0.115s
-user	0m0.230s
-sys	0m0.170s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 1000000, writeRatio 0.75, 1 times
-
-real	0m1.710s
-user	0m5.347s
-sys	0m1.072s
------------------------------------------------------
-./bin/l_queue_test threads: 16, numOP: 1000000, writeRatio 0.75, 2 times
-
-real	0m1.398s
-user	0m2.970s
-sys	0m2.126s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 10, writeRatio 0.75, 1 times
-
-real	0m0.005s
-user	0m0.001s
-sys	0m0.006s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 10, writeRatio 0.75, 2 times
-
-real	0m0.005s
-user	0m0.001s
-sys	0m0.005s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 100, writeRatio 0.75, 1 times
-
-real	0m0.005s
-user	0m0.000s
-sys	0m0.008s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 100, writeRatio 0.75, 2 times
-
-real	0m0.006s
-user	0m0.002s
-sys	0m0.006s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 1000, writeRatio 0.75, 1 times
-
-real	0m0.007s
-user	0m0.003s
-sys	0m0.007s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 1000, writeRatio 0.75, 2 times
-
-real	0m0.006s
-user	0m0.004s
-sys	0m0.005s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 10000, writeRatio 0.75, 1 times
-
-real	0m0.018s
-user	0m0.032s
-sys	0m0.020s
------------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 10000, writeRatio 0.75, 2 times
-
-real	0m0.018s
-user	0m0.035s
+real	0m0.234s
+user	0m0.212s
 sys	0m0.021s
 -----------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 100000, writeRatio 0.75, 1 times
+./bin/l_queue_test threads: 1, numOP: 4000000, writeRatio 0.75,  times
 
-real	0m0.153s
-user	0m0.471s
-sys	0m0.108s
+real	0m0.468s
+user	0m0.430s
+sys	0m0.037s
 -----------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 100000, writeRatio 0.75, 2 times
+./bin/l_queue_test threads: 1, numOP: 10000000, writeRatio 0.75,  times
 
-real	0m0.139s
-user	0m0.300s
-sys	0m0.196s
+real	0m1.177s
+user	0m1.066s
+sys	0m0.110s
 -----------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 1000000, writeRatio 0.75, 1 times
+./bin/l_queue_test threads: 2, numOP: 1000000, writeRatio 0.75,  times
 
-real	0m1.667s
-user	0m5.374s
-sys	0m0.925s
+real	0m0.557s
+user	0m0.823s
+sys	0m0.183s
 -----------------------------------------------------
-./bin/l_queue_test threads: 32, numOP: 1000000, writeRatio 0.75, 2 times
+./bin/l_queue_test threads: 2, numOP: 2000000, writeRatio 0.75,  times
 
-real	0m1.432s
-user	0m3.207s
-sys	0m2.075s
+real	0m0.471s
+user	0m0.455s
+sys	0m0.085s
+-----------------------------------------------------
+./bin/l_queue_test threads: 2, numOP: 4000000, writeRatio 0.75,  times
+
+real	0m2.131s
+user	0m3.231s
+sys	0m0.579s
+-----------------------------------------------------
+./bin/l_queue_test threads: 2, numOP: 10000000, writeRatio 0.75,  times
+
+real	0m2.880s
+user	0m3.073s
+sys	0m0.795s
+-----------------------------------------------------
+./bin/l_queue_test threads: 4, numOP: 1000000, writeRatio 0.75,  times
+
+real	0m0.414s
+user	0m0.525s
+sys	0m0.180s
+-----------------------------------------------------
+./bin/l_queue_test threads: 4, numOP: 2000000, writeRatio 0.75,  times
+
+real	0m0.811s
+user	0m1.015s
+sys	0m0.464s
+-----------------------------------------------------
+./bin/l_queue_test threads: 4, numOP: 4000000, writeRatio 0.75,  times
+
+real	0m1.652s
+user	0m2.135s
+sys	0m0.967s
+-----------------------------------------------------
+./bin/l_queue_test threads: 4, numOP: 10000000, writeRatio 0.75,  times
+
+real	0m5.630s
+user	0m9.207s
+sys	0m2.381s
+-----------------------------------------------------
+./bin/l_queue_test threads: 8, numOP: 1000000, writeRatio 0.75,  times
+
+real	0m0.979s
+user	0m1.761s
+sys	0m0.623s
+-----------------------------------------------------
+./bin/l_queue_test threads: 8, numOP: 2000000, writeRatio 0.75,  times
+
+real	0m2.591s
+user	0m6.291s
+sys	0m0.885s
+-----------------------------------------------------
+./bin/l_queue_test threads: 8, numOP: 4000000, writeRatio 0.75,  times
+
+real	0m5.098s
+user	0m10.139s
+sys	0m2.711s
+-----------------------------------------------------
+./bin/l_queue_test threads: 8, numOP: 10000000, writeRatio 0.75,  times
+
+real	0m15.263s
+user	0m39.472s
+sys	0m4.675s
+-----------------------------------------------------
+./bin/l_queue_test threads: 16, numOP: 1000000, writeRatio 0.75,  times
+
+real	0m4.344s
+user	0m32.471s
+sys	0m2.778s
+-----------------------------------------------------
+./bin/l_queue_test threads: 16, numOP: 2000000, writeRatio 0.75,  times
+
+real	0m6.508s
+user	0m32.527s
+sys	0m6.786s
+-----------------------------------------------------
+./bin/l_queue_test threads: 16, numOP: 4000000, writeRatio 0.75,  times
+
+real	0m14.521s
+user	1m30.249s
+sys	0m8.251s
+-----------------------------------------------------
+./bin/l_queue_test threads: 16, numOP: 10000000, writeRatio 0.75,  times
+
+real	0m44.012s
+user	4m32.024s
+sys	0m28.320s
 -----------------------------------------------------

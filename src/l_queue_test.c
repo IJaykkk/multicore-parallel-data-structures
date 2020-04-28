@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
         printf("current idx: %d\n", i);
         #endif
 
-        int num  = rand() % 1000 + 1;
+        int num  = rand();
         float r = (float) rand() / (float) RAND_MAX;
         if (r < push_ratio)  {
             queue_push(q, num);
